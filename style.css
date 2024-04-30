@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+:root{
+    --bodyColor : --#fefefe;
+    --calcBody : --#606168;
+}
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #606168;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.calculator input[type="text"] {
+    background-color: #d0d5e0;
+    outline: none;
+    border-radius: 7px;
+    text-align: right;
+    font-size: 1.2em;
+    box-shadow: 2px 5px 0px 0px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.calculator table {
+    width: 100%;
+}
+
+.calculator table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* .calculator table td.operator {
+    background-color: #8a8a8a;
+} */
+.calculator table td button{
+    background-color: #fff;
+    border: none;
+    width: 2em;
+    font-size: 1.2em;
+    box-shadow: 5px 5px 0px 0px;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+.calculator table td.clear {
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+.calculator table td button.equals {
+    background-color: #f79734;
+}
+@media(min-width: 400px){
+    .calculator table td button, .calculator input[type="text"] {
+    font-size: 1.5em;
+    }
+    
+
+@media(min-width: 800px){
+    .calculator table td button, .calculator input[type="text"] {
+    font-size: 2em;
+    }
+}
+/* @media(max-width: 375px){
+    .container{
+        margin-bottom: 300em;
+    }
+} */
