@@ -3,15 +3,18 @@
     box-sizing: border-box;
     padding: 0;
 }
-:root{
-    --bodyColor : --#fefefe;
-    --calcBody : --#606168;
-}
 body {
     background-color: #f1f1f1;
     font-family: Arial, sans-serif;
 }
-
+.url-repo{
+    text-align: center;
+    padding-top: 2em;
+}
+.url-repo a{
+    color: #f79734;
+    font-size: 2em;
+}
 .container {
     display: flex;
     justify-content: center;
